@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <script src="script.js"></script>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: rgb(163, 163, 241);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            padding: 18px;
+            margin-bottom: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.315);
+        }
+
+        main {
+            background-color: white;
+            width: 500px;
+            margin: auto;
+            height: 170px;
+
+            border-radius: 10px;
+        }
+
+        #formu {
+            text-align: center;
+            padding: 20px;
+        }
+
+        #mostrar {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        button {
+            width: 100px;
+            height: 30px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Descubra seu índice de massa corporal!</h1>
+    </header>
+    <main>
+        <div id="formu">
+            <label for="ikg">Peso:</label>
+            <input type="number" name="kg" id="ikg">
+            <label for="ialt">Altura:</label>
+            <input type="number" name="alt" id="ialt">
+        </div>
+        <div id="mostrar">
+            <button onclick="calculoimc()">Calcular</button>
+            <p id="calc"></p>
+            <p id="res"></p>
+        </div>
+    </main>
+</body>
+</html>

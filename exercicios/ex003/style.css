@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+/* CSS reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    
+}
+
+/* header */
+header {
+   padding: 20px;
+   background: linear-gradient(45deg, rgb(136, 155, 240), white);
+   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.267);
+   text-align: center;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+    margin: 0px 10px;
+}
+
+header nav a:hover {
+    color: rgba(0, 0, 255, 0.63);
+    text-decoration: underline;
+}
+
+/* main e section */
+
+section {
+    padding: 20px;
+    margin: 5px auto;
+}
+
+#projeto {
+    margin: 0px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.274);
+    border-radius: 8px;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+article {
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+article a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgba(0, 0, 255, 0.63);
+}
+
+/* rodapé */
+
+footer {
+    color: rgb(134, 132, 132);
+    text-align: center;
+}
