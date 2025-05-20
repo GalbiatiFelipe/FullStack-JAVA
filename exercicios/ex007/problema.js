@@ -13,3 +13,13 @@
 4. exibir o nome do filme
 5. exibir a duração em horas e minutos
 */
+function mostrarRes() {
+    const nome = document.getElementById('inome').value
+    const tempo = document.getElementById('itemp').value
+
+    const horas = Math.floor(tempo / 60)
+    const minutos = tempo - horas * 60
+
+    document.getElementById('tituloSaida').textContent = nome.toUpperCase()
+    document.getElementById('duracaoSaida').textContent = `O filme tem ${horas} horas e ${minutos} minutos.`
+}

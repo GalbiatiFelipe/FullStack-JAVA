@@ -7,10 +7,15 @@
     <script src="problema.js"></script>
 </head>
 <body>
+    <h1>Seu cinema</h1>
     <label for="inome">Nome do Filme</label>
     <input type="text" name="nome" id="inome">
     
-    <label for="itemp">Tempo de Duração</label>
+    <label for="itemp">Tempo de Duração (em minutos)</label>
     <input type="number" name="temp" id="itemp">
+
+    <button onclick="mostrarRes()">Mostrar resultado</button>
+    <h2 id="tituloSaida"></h2>
+    <h3 id="duracaoSaida"></h3>
 </body>
 </html>
