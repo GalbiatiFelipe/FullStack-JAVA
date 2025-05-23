@@ -27,6 +27,7 @@ const attInterface = () => {
 }
     matrizGastos.forEach(([nome, valor]) => {
         const elemento = pegarId(nome)
+  
         elemento.textContent = `${nome}: R$ ${formataMoeda(valor)}`
     })
         
@@ -42,7 +43,7 @@ function addGasto() {
 
     attValorCat(categoria, valorInformado)
     attValorCat(total, valorInformado)
-    attInterace()
+    attInterface()
     limparCampos()
 }
 
@@ -55,3 +56,4 @@ function addGasto() {
 5. atualizar interface
 6. limpar campos
 */
+
