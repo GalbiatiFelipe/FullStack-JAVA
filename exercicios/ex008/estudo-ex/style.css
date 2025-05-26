@@ -1,0 +1,63 @@
+@charset "UTF-08";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    margin: auto;
+    margin-top: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 385px;
+    height: 480px;
+    border-radius: 8px;
+    border: 1px solid rgb(17, 94, 209);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.6em;
+    color: rgb(17, 94, 209);
+}
+
+input, select {
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(17, 94, 209);
+    padding: 10px;
+    width: 350px;
+}
+
+#botao {
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 350px;
+
+    background-color: rgb(17, 94, 209);
+    color: white;
+    border: none;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+p {
+    margin-top: 15px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 350px;
+    border: 1px solid rgb(17, 94, 209);
+}
+
+#total {
+    background-color: rgb(17, 94, 209);
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+

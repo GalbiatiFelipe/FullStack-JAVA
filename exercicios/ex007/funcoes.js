@@ -35,8 +35,13 @@ digaNome("Felipe")
 */
 // traduzindo para arrow function
 
-const digaNome = (nome) => {
-    console.log(nome)
+const conta2 = (num1, num2) => {
+    const equa = num1 - num2
+    return equa
 }
-digaNome("Felipe")
+
+console.log()
+
+
+
 
