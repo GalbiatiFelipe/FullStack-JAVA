@@ -3,7 +3,7 @@ const matrizGastos = [
     ["transp", 0],
     ["lazer", 0],
     ["outros", 0],
-    ["total", 0]
+    ["total", 0],
 ]
 // funçoes utilitarias
 const pegarId = (id) => document.getElementById(id)
@@ -12,32 +12,33 @@ const somaValor = (total, valor) => total + valor
 const limparCampos = () => pegarId('ivalor').value = ''
 const formataMoeda = (valor) => valor.toFixed(2).replace('.', ',')
 //obter valores de formulario
-const pegarValorinf = () => parseFloat(pegarId('ivalor').value)
+const pegarValorinf = () => pegarId('ivalor')
 const obterCategoriainf = () => pegarId('categoria').value
 
 //obter categoria da matriz
-const obtercategoria = (matriz, nomeCategoria) => matriz.find((item[0] === categoriaInf))
+const obtercategoria = (matriz, nomeCategoria) => matriz.find((item) => item[0] === nomeCategoria) 
 
 // Atualizar valores da matriz
 
 const attValorCat = (categoria, valor) => categoria[1] = somaValor(categoria[1], valor)
 
 const attInterface = () => {
-
-}
     matrizGastos.forEach(([nome, valor]) => {
         const elemento = pegarId(nome)
   
         elemento.textContent = `${nome}: R$ ${formataMoeda(valor)}`
     })
-        
+}
+
 function addGasto() {
     const valorInformado = pegarValorinf()
     const categoriaInf = obterCategoriainf()
+
     if (valorNeg(valorInformado)) {
         alert('O valor não pode ser negativo')
-        return;
+        return
     }
+
     const categoria = obtercategoria(matrizGastos, categoriaInf)
     const total = obtercategoria(matrizGastos, "total")
 
@@ -57,3 +58,4 @@ function addGasto() {
 6. limpar campos
 */
 
+console.log()
