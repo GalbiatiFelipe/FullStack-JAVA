@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+header {
+    background-color: rgb(136, 155, 240);
+
+    text-align: center;
+    color: white;
+    text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.322);
+
+    padding: 10px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.253);
+}
+
+main {
+    width: 800px;
+
+    margin: auto;
+}
+
+section#sobre {
+    margin-top: 20px;
+    padding: 10px;
+    
+    line-height: 1.5em;
+}
+
+#sobre h2 {
+    margin-bottom: 10px;
+}
+
+section#caixa {
+    padding: 10px;
+    
+    text-align: center;
+}
+
+#caixa input {
+    margin-bottom: 10px;
+    width: 100px;
+}
+
+#caixa #botao {
+    height: 30px;
+
+    background-color: rgba(136, 155, 240, 0.541);
+    
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0);
+}
