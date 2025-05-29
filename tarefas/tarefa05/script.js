@@ -1,28 +1,35 @@
-/*
-Lógica:
+const numeroSecreto = Math.floor(Math.random() * 100) + 1
+const maxTentativas = 10
+let tentativas = 0
 
+function verificarPalpite() {
+    const input = document.getElementById('palpite')
+    const palpite = Number(input.value)
+    const mensagem = document.getElementById('mensagem')
+    const tentativasTexto = document.getElementById('tentativas')
+    
+    tentativas++;
 
-2 - Definir um número de tentativas e criar o contador
-3 - Validar o número do jogador
-4 - Dar feedback ao jogador
-5 - Exibir o número de tentativas restante
-6 - Se o jogador não conseguir emitir uma mensagem e revelar o número
-*/
+    if (palpite === numeroSecreto) {
+    mensagem.textContent = `Parabéns! Você acertou o número ${numeroSecreto} em ${tentativas} tentativa(s)!`
+    desabilitarJogo()
+    } else if (tentativas >= maxTentativas) {
+    mensagem.textContent = `Você perdeu! O número era ${numeroSecreto}.`
+    desabilitarJogo()
+    } else if (palpite < numeroSecreto) {
+    mensagem.textContent = "Tente um número maior!"
+    } else {
+    mensagem.textContent = "Tente um número menor!"
+    }
 
-//Entrada
-const pegarId = (id) => document.getElementById(id)
-
-function numeroGerado(min, max ) {
-    return Math.random() * (max - min) + min;
+    tentativasTexto.textContent = `Tentativas: ${tentativas} de ${maxTentativas}`
+    input.value = ''
+    input.focus()
 }
 
-//Processamento
-
-function chute() {
-    window.alert(parseFloat(pegarId('ichute').value))
+function desabilitarJogo() {
+    document.getElementById('palpite').disabled = true
+    document.querySelector('button').disabled = true
 }
 
-//Saída
-
-console.log(parseInt(numeroGerado(1, 100)))
-
+console.log(numeroSecreto)
