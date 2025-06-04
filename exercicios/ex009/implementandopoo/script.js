@@ -1,5 +1,5 @@
-// classe
 
+// classe
 class veiculo {
     //método construtor
     constructor(marca, modelo, ano){
@@ -26,9 +26,30 @@ class veiculo {
     }
 }
 
-const novoVeiculo = new veiculo('honda', 'civic', 2025)
+//herança
 
-console.log(novoVeiculo)
-novoVeiculo.ligar()
-novoVeiculo.desligar()
-console.log('o carro está ligado?', novoVeiculo.checar)
+class moto extends veiculo {
+    constructor(marca, modelo, ano){
+        super(marca, modelo, ano)
+    }
+}
+
+class carro extends veiculo {
+    constructor(marca, modelo, ano, numPortas){
+        super(marca, modelo, ano)
+        this.numPortas = numPortas
+    }
+
+    abrirPortas(){
+        console.log('as portas do carro foram abertas')
+    }
+}
+
+const novoCarro = new carro('Volkswagen', 'Gol', 2020, 4)
+const novaMoto = new moto('Yamaha', 'MT-07', 2025)
+
+novoCarro.ligar()
+novoCarro.abrirPortas()
+
+console.log('O carro está ligado?',novoCarro.checar)
+
