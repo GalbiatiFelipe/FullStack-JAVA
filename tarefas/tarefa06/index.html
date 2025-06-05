@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estacionamento online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Vagas online</h1>
+        <p>Compra facil e rápida</p>
+    </header>
+
+    <main>
+        <section id="areaCompra">
+            <h2>Valores:</h2>
+            <ul>
+                <li>R$1,00 = 30 Minutos</li>
+                <li>R$1,75 = 60 Minutos</li>
+                <li>R$3,00 = 120 Minutos <strong>(tempo máx.)</strong></li>
+            </ul>
+            <div id="formulario">
+                <input type="number" name="valor" id="ivalor" placeholder="Enviar valor em R$">
+                <button>Comprar</button>
+            </div>
+        </section>
+        
+        <section id="areaFeedback">
+            <p id="tempo"></p>
+            <p id="troco"></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
