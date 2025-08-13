@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Endereço</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Cadastro de Usuário</h1>
+        <section>
+            <h2>Informações Pessoais</h2>
+            
+            <p>
+                <label for="nome">Nome (completo): </label> <br>
+                <input type="number" name="nome" id="nome">
+            </p>
+
+            <p>
+                <label for="Idade">Idade: </label> <br>
+                <input type="number" name="Idade" id="Idade">
+            </p>
+        </section>
+
+        <section>
+            <h2>Endereço</h2> 
+
+            <form action="" autocomplete="off">
+                <p>
+                    <button type="submit" id="botaopreencher">Preencher Dados</button>
+                </p>
+                
+                <p>
+                    <label for="cep">CEP: </label> <br>
+                    <input type="number" name="cep" id="cep">
+                </p>
+            
+                <p>
+                    <label for="logradouro">Logradouro: </label> <br>
+                    <input type="text" name="logradouro" id="logradouro">
+                </p>
+            
+                <p>
+                    <label for="bairro">Bairro: </label> <br>
+                    <input type="text" name="bairro" id="bairro">
+                </p>
+            
+                <p>
+                    <label for="cidade">Cidade: </label> <br>
+                    <input type="text" name="cidade" id="cidade">
+                </p>
+            
+                <p>
+                    <label for="estado">Estado: </label> <br>
+                    <input type="text" name="estado" id="estado">
+                </p>
+            
+                <p>
+                    <label for="numero">Número</label> <br>
+                    <input type="number" name="numero" id="numero">
+                </p>
+
+            
+                <p><button type="submit" id="botaocadastro">Cadastrar</button></p>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
